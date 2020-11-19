@@ -7,7 +7,6 @@ api_url = API_URL
 schema = POST_TASK_SCHEMA
 
 
-@pytest.mark.tryfirst
 def test_post_tasks():
     client = ServerApi(api_url=API_URL)
     resp = client.post_tasks(assignee=ASSIGNEE,
