@@ -6,7 +6,8 @@ api_url = API_URL
 schema = GET_TASK_SCHEMA
 
 
-def test_post_tasks():
+# TEST - post task response matches schema
+def test_get_all_tasks():
     client = ServerApi(api_url=API_URL)
     resp = client.get_all_tasks()
     json_schema_check(resp, schema, expected_status=200)

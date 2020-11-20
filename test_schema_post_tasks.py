@@ -7,6 +7,7 @@ api_url = API_URL
 schema = POST_TASK_SCHEMA
 
 
+# TEST - test post tasks response matches schema
 def test_post_tasks():
     client = ServerApi(api_url=API_URL)
     resp = client.post_tasks(assignee=ASSIGNEE,
